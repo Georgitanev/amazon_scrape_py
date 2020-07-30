@@ -1,0 +1,161 @@
+title,url,description
+  Detect fraud faster using machine learning with Amazon Fraud Detector – now generally available ,https://aws.amazon.com/about-aws/whats-new/2020/07/detect-fraud-faster-using-machine-learning-with-amazon-fraud-detector/,"
+
+
+
+
+
+  Detect fraud faster using machine learning with Amazon Fraud Detector – now generally available 
+
+
+
+ Posted On: Jul 28, 2020 
+
+
+Amazon Fraud Detector is now generally available to all AWS customers. Amazon Fraud Detector is a fully managed service that makes it easy to identify potentially fraudulent online activities, such as the creation of fake accounts or online payment fraud. Amazon Fraud Detector uses machine learning (ML) and 20 years of fraud detection expertise from AWS and Amazon.com to automatically identify potentially fraudulent activity so you can catch more online fraud faster. Amazon Fraud Detector handles the heavy lifting of ML for you - in just a few clicks you can create a fraud detection model, with no prior machine learning experience required. 
+
+
+
+
+
+
+
+
+
+Globally, each year, tens of billions of dollars are lost to online fraud. Companies conducting business online are especially prone to attacks from bad actors who often exploit different tactics such as creating fake accounts and making payments with stolen credit cards. Companies typically use fraud detection applications to identify fraudsters and stop them before they cause costly business disruptions. However, these applications often rely on business rules that don’t keep up with the changing behaviors of fraudsters. More recent fraud detection applications have tried to use machine learning; however, they frequently use a one-size-fits-all approach based on general data sets and fraud behaviors that aren't specific to your business, which limits their accuracy. 
+
+
+
+
+
+
+
+  Kurt Kufeld, VP of AWS Platform, announces Amazon Fraud Detector is generally available 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+Amazon Fraud Detector overcomes these challenges by combining your data, the latest in ML science, and more than 20 years of fraud detection experience from Amazon to build ML models tailor-made to detect fraud in your business so you can catch more fraud faster. Unlike general-purpose machine learning (ML) packages, Amazon Fraud Detector is designed specifically to detect fraud. To get started, read the documentation where you’ll find details on building your first fraud detection model, writing supplemental business rules, and generating real-time fraud predictions. 
+
+
+
+
+Amazon Fraud Detector is available today in the AWS console, via the AWS SDKs, and the AWS CLI in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Asia Pacific (Singapore) and Asia Pacific (Sydney). 
+
+
+
+
+To learn more please visit the Amazon Fraud Detector website. 
+
+
+
+
+
+
+ »
+
+
+
+
+
+"
+  Announcing the CIS Benchmark for Amazon EKS ,https://aws.amazon.com/about-aws/whats-new/2020/07/announcing-cis-benchmark-for-amazon-eks/,"
+
+
+
+
+
+  Announcing the CIS Benchmark for Amazon EKS 
+
+
+
+ Posted On: Jul 22, 2020 
+
+
+The new CIS Benchmark for Amazon EKS helps you accurately assess the secure configuration of nodes running as part of your Amazon EKS clusters. 
+
+
+
+
+
+Security is a critical consideration for configuring and maintaining Kubernetes clusters and applications. The Center for Internete Security (CIS) Kubernetes Benchmark provides good practice guidance on security configurations for self-managed Kubernetes clusters, but did not accurately help evaluate the security configuration status for the AWS-managed Kubernetes clusters run by Amazon EKS. Not all of the recommendations from the CIS Kubernetes Benchmark were applicable to EKS clusters as customers are not responsible for configuring or managing the control plane.
+
+
+
+
+Now, the CIS Amazon EKS Benchmark provides accurate guidance for node security configurations for EKS. The benchmark is applicable to EC2 nodes (both managed and self-managed) where you are responsible for security configurations of Kubernetes components. The benchmark provides a standard, community-approved way to ensure that you have configured your Kubernetes cluster and nodes securely when using Amazon EKS. 
+
+
+
+
+The CIS Amazon EKS Benchmark consists of four sections; control plane logging configuration, node security configurations, policies, and managed services. The benchmark supports the Kubernetes versions currently available from Amazon EKS (v1.15 - v1.17) and can be run using kube-bench, a standard open source tool for checking configuration using the CIS benchmark on Kubernetes clusters.  
+
+
+
+
+To learn more, read our blog or see the  benchmark by navigating to “Access all benchmarks” on the CIS website.
+
+
+
+
+
+
+ »
+
+
+
+
+
+"
+  Amazon CloudFront announces Cache Key and Origin Request Policies ,https://aws.amazon.com/about-aws/whats-new/2020/07/cloudfront-cache-key-policy/,"
+
+
+
+
+
+  Amazon CloudFront announces Cache Key and Origin Request Policies 
+
+
+
+ Posted On: Jul 22, 2020 
+
+
+Amazon CloudFront now provides enhanced granular control to configure headers, query strings, and cookies that can be used to compute the cache key or forwarded to your origin from your CloudFront distributions. Further, you can configure the cache key and origin request settings independently as account-level policies that can be easily applied across multiple distributions.
+
+
+
+
+
+Previously, when you configured your CloudFront distribution behavior to forward request metadata such as headers, query strings, and cookies, CloudFront would cache separate versions of these objects based on all the unique combinations of these metadata values. With this new functionality, you do not need to choose between forwarding data to the origin and optimizing cache efficiency by only varying the cache key when absolutely needed. For example, you can configure CloudFront to always forward 'Auth' or 'User-Agent' headers to your origin, but not vary content based on these values. Or you can forward everything, but select a specific header or query string parameter to use for varying the cached content, such as using the ‘Accept-Language’ header to serve localized content variants by client languages supported.
+In addition, these options are now set using policies. A policy allows for the same specific combination of settings to be easily applied across many different distribution behaviors, saving setup time and complexity and allowing you to manage consistency across configurations. CloudFront also provides several system policies that are preconfigured. These include default policies for maximum caching and retention (max TTLs, compression, etc.), policies appropriate for proxying dynamic transactions (disable caching), and even some policies for common use cases and integrations with other AWS services, like personalized video streaming with AWS Elemental Media Package, and S3 CORS header support (forwarding of certain expected headers). You can create your own policies for different content and application profiles, and then apply them to any distributions and behaviors that have similar characteristics.
+This feature is available for immediate use and is supported in the CloudFront Console, APIs, SDK, and CLI. For more information, refer to the CloudFront Developer Guide and API documentation. There is no additional fee for using this feature. Regular CloudFront charges apply.
+
+
+
+
+
+
+ »
+
+
+
+
+
+"
